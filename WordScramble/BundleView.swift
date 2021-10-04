@@ -13,6 +13,7 @@ struct BundleView: View {
             // we found the file in our bundle
             if let fileContents = try? String(contentsOf: fileURL) {
                 // we loaded the file into a string
+                Text("\(fileContents)")
             }
         }
         

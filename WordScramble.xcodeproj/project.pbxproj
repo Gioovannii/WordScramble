@@ -12,6 +12,9 @@
 		7BF50D75270A9BB300F91864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF50D74270A9BB300F91864 /* Assets.xcassets */; };
 		7BF50D78270A9BB300F91864 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF50D77270A9BB300F91864 /* Preview Assets.xcassets */; };
 		7BF50D7F270AA38B00F91864 /* BundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF50D7E270AA38B00F91864 /* BundleView.swift */; };
+		7BF50D81270AA4D900F91864 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF50D80270AA4D900F91864 /* ListView.swift */; };
+		7BF50D83270AA61800F91864 /* StringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF50D82270AA61800F91864 /* StringView.swift */; };
+		7BF50D85270AA78500F91864 /* TextCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF50D84270AA78500F91864 /* TextCheckerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		7BF50D74270A9BB300F91864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF50D77270A9BB300F91864 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BF50D7E270AA38B00F91864 /* BundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleView.swift; sourceTree = "<group>"; };
+		7BF50D80270AA4D900F91864 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7BF50D82270AA61800F91864 /* StringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringView.swift; sourceTree = "<group>"; };
+		7BF50D84270AA78500F91864 /* TextCheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCheckerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			children = (
 				7BF50D70270A9BB200F91864 /* WordScrambleApp.swift */,
 				7BF50D72270A9BB200F91864 /* ContentView.swift */,
+				7BF50D82270AA61800F91864 /* StringView.swift */,
+				7BF50D80270AA4D900F91864 /* ListView.swift */,
 				7BF50D7E270AA38B00F91864 /* BundleView.swift */,
+				7BF50D84270AA78500F91864 /* TextCheckerView.swift */,
 				7BF50D74270A9BB300F91864 /* Assets.xcassets */,
 				7BF50D76270A9BB300F91864 /* Preview Content */,
 			);
@@ -140,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF50D81270AA4D900F91864 /* ListView.swift in Sources */,
+				7BF50D83270AA61800F91864 /* StringView.swift in Sources */,
 				7BF50D73270A9BB200F91864 /* ContentView.swift in Sources */,
+				7BF50D85270AA78500F91864 /* TextCheckerView.swift in Sources */,
 				7BF50D7F270AA38B00F91864 /* BundleView.swift in Sources */,
 				7BF50D71270A9BB200F91864 /* WordScrambleApp.swift in Sources */,
 			);

@@ -17,9 +17,11 @@ struct ContentView: View {
             VStack {
                 TextField("Hello world!", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
                     .padding()
                 
                 List(usedWoords, id: \.self) {
+                    Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
             }

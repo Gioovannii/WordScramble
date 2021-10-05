@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var usedWoords = [String]()
+    @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    
+    @State private var errorTitle = ""
+    @State private var errorMessage = ""
+    @State private var showingError = false
+
     
     var body: some View {
         NavigationView {
@@ -20,13 +25,16 @@ struct ContentView: View {
                     .autocapitalization(.none)
                     .padding()
                 
-                List(usedWoords, id: \.self) {
+                List(usedWords, id: \.self) {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
             }
             .navigationTitle(rootWord)
             .onAppear(perform: startGame)
+            .alert(isPresented: $showingError) {
+                Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            }
         }
     }
     

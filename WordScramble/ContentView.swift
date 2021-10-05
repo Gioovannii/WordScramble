@@ -32,6 +32,11 @@ struct ContentView: View {
                 .trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer.count > 0 else { return }
+        
+        // extra validation to come
+        
+        usedWoords.insert(answer, at: 0)
+        newWord = ""
     }
 }
 

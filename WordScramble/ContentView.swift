@@ -26,6 +26,13 @@ struct ContentView: View {
             .navigationTitle(rootWord)
         }
     }
+    
+    func addNewWord() {
+        let answer = newWord.lowercased()
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard answer.count > 0 else { return }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

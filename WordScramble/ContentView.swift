@@ -29,6 +29,9 @@ struct ContentView: View {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
+                
+                Text("Score : \(userScore) points").font(.headline)
+                    .padding()
             }
             .navigationTitle(rootWord)
             .onAppear(perform: startGame)

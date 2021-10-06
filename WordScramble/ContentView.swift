@@ -80,6 +80,7 @@ struct ContentView: View {
         }
         
         usedWords.insert(answer, at: 0)
+        userScore += answer.count
         newWord = ""
     }
     

@@ -25,9 +25,11 @@ struct ContentView: View {
                     .autocapitalization(.none)
                     .padding()
                 
-                List(usedWords, id: \.self) {
-                    Image(systemName: "\($0.count).circle")
-                    Text($0)
+                List(usedWords, id: \.self) { word in
+                    HStack {
+                        Image(systemName: "\(word.count).circle")
+                        Text(word)
+                    }
                 }
                 
                 Text("Score : \(userScore) points").font(.headline)

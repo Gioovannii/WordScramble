@@ -69,6 +69,11 @@ struct ContentView: View {
             return
         }
         
+        guard answer.count > 3 else {
+            wordError(title: "Too small", message: "Finf a word is at least 3 letters minimum.")
+            return
+        }
+        
         guard isRealWord(word: answer) else {
             wordError(title: "Word not possible", message: "That isn't a real word")
             return

@@ -102,6 +102,8 @@ struct ContentView: View {
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord.lowercased()
         
+        guard tempWord != word else { return false }
+        
         for letter in word {
             if let pos = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: pos)

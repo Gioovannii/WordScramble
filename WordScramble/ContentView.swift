@@ -53,7 +53,10 @@ struct ContentView: View {
         let answer = newWord.lowercased()
             .trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard answer.count > 0 else { return }
+        guard answer.count > 0 else {
+            wordError(title: "No no no ...", message: "Find a word is not blank")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word use already", message: "Be more original")

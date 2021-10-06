@@ -15,7 +15,7 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
-
+    @State private var userScore = 0
     
     var body: some View {
         NavigationView {

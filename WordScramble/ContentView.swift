@@ -38,6 +38,14 @@ struct ContentView: View {
             .alert(isPresented: $showingError) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Restart") {
+                        startGame()
+                        usedWords = [String]()
+                    }
+                }
+            }
         }
     }
     

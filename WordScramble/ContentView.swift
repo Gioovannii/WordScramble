@@ -30,6 +30,8 @@ struct ContentView: View {
                         Image(systemName: "\(word.count).circle")
                         Text(word)
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibility(label: Text("\(word), \(word.count) letters"))
                 }
                 
                 Text("Score : \(userScore) points").font(.headline)

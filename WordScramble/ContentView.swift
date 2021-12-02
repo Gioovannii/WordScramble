@@ -72,7 +72,7 @@ struct ContentView: View {
         }
         
         guard answer.count > 3 else {
-            wordError(title: "Too small", message: "Finf a word is at least 3 letters minimum.")
+            wordError(title: "Too small", message: "Find a word is at least 3 letters minimum.")
             return
         }
         
